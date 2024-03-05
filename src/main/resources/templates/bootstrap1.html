@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap уроки</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container"> <!-- container имеет заданную ширину - например 500px и помещ посередине с отступами-->
+    <h1>Привет, вы на сайте itProger</h1>
+    <p>Привет, вы на сайте itProger</p>
+</div>
+<div class="container-fluid"> <!-- container растяг на всю шир экрана -->
+    <h1>Привет всем!</h1>
+    <p>Все работает</p>
+</div>
+<!-- xs(смартфоны) sm(планшеты) md(лэптоп или ноутбуки) lg(стац с больш экр) - размеры экранов -->
+<div class="container">
+    <h1>3 различных блока без fluid</h1>
+    <div class="row">
+        <div class="col-md-4" style="background-color: orange">Left</div>
+        <div class="col-md-4" style="background-color: lime">Middle</div>
+        <div class="col-md-4" style="background-color: yellow">Right</div>
+    </div>
+</div>
+<div class="container-fluid">
+    <h1>3 различных блока</h1>
+    <div class="row">
+        <div class="col-md-4" style="background-color: orange">Left</div>
+        <div class="col-md-4" style="background-color: lime">Middle</div>
+        <div class="col-md-4" style="background-color: yellow">Right</div>
+    </div>
+</div>
+<div class="container-fluid">
+    <h1>Различные блоки</h1>
+
+    <div class="row">
+        <div class="col-md-6" style="background-color: #ff9999">Первый</div>
+        <div class="col-md-6" style="background-color: #99CCFF">Второй</div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-2" style="background-color: #ff9999">Первый</div>
+        <div class="col-md-2" style="background-color: #99CCFF">Второй</div>
+        <div class="col-md-2" style="background-color: #00CC99">Третий</div>
+        <div class="col-md-2" style="background-color: #00F999">Четвертый</div>
+        <div class="col-md-2" style="background-color: #fafafa">Пятый</div>
+        <div class="col-md-2" style="background-color: #cccccc">Шестой</div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-3" style="background-color: #ff9999">Первый</div>
+        <div class="col-md-3" style="background-color: #99CCFF">Второй</div>
+        <div class="col-md-2" style="background-color: #ff9999">Первый</div>
+        <div class="col-md-2" style="background-color: #99CCFF">Второй</div>
+        <div class="col-md-2" style="background-color: #00CC99">Третий</div>
+    </div>
+    <br>
+</div>
+
+<div class="container-fluid">
+    <h1>Разные размеры 1 и 2 блоков для разных экранов</h1>
+    <div class="row">
+        <div class="col-xs-12 col-sm-9 col-md-4 col-lg-6" style="background-color: #ff9999">Первый</div>
+        <div class="col-xs-12 col-sm-3 col-md-8 col-lg-6" style="background-color: #99CCFF">Второй</div>
+    </div>
+    <br>
+
+    <h1>Меняем блоки 1 и 2 местами push и pull</h1>
+    <div class="row">
+        <div class="col-lg-5 col-lg-push-7" style="background-color: #ff9999">Первый</div>
+        <div class="col-lg-7 col-lg-pull-5" style="background-color: #99CCFF">Второй</div>
+    </div>
+    <br>
+    <!-- можем вкладывать одну систему сеток в другую систему сеток -->
+    <h1>Вкладываем в 1 блок еще ряд из 3 блоков по 4 ячейки</h1>
+    <div class="row"> <!-- ряд из 2 блоков -->
+        <div class="col-lg-5"> <!-- убираем бэкграунд из 1 блока -->
+            <div class="row"> <!-- внутри 1 блока еще ряд из 3 блоков -->
+                <div class="col-lg-4" style="background-color: #00CC99">Первый</div>
+                <div class="col-lg-4" style="background-color: #00F999">Второй</div>
+                <div class="col-lg-4" style="background-color: #99CCFF">Трений</div>
+            </div>
+        </div>
+        <div class="col-lg-7" style="background-color: darkgreen">Второй блок</div>
+    </div>
+    <br>
+</div>
+<h1>Содаем меню шапки сайта</h1>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- каждая шапка сайта содержит лого (слово) и меню -->
+        <div class="navbar-header"> <!-- лого -->
+            <h1>Лого класса ссылка со стилем</h1>
+            <br>
+            <a href="#" class="navbar-brand">ITPROGER</a> <!-- сделаем из лого ссылку с определенным стилем -->
+            <br>
+            <br>
+            <h1>А вот так бы лого выглядело без стиля</h1>
+            ITPROGER
+        </div>
+    </div>
+</nav>
+<br>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header"> <!-- лого -->
+            <a href="#" class="navbar-brand">ITPROGER</a> <!-- сделаем из лого ссылку с определенным стилем -->
+        </div>
+            <!-- по традиции меню сайта создается в тэге ul -->
+        <ul class="nav navbar-nav">
+            <!--  с таким стилем мы оформляем меню под навгацию -->
+            <li class="active"><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Обратная связь</a></li>
+        </ul>
+    </div>
+</nav>
+</body>
+</html>
