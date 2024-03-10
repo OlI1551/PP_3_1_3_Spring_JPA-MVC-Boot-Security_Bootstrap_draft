@@ -13,6 +13,11 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        #buttons {
+            padding: 30px;
+        }
+    </style>
 </head>
 <body>
 <div class="container"> <!-- container имеет заданную ширину - например 500px и помещ посередине с отступами-->
@@ -127,5 +132,494 @@
         </ul>
     </div>
 </nav>
+<div class="container-fluid">
+    <h1>itProger <small>Маленький текст 85%</small></h1>
+    <h2>itProger <small>Маленький текст 85%</small></h2>
+    <h3>itProger <small>Маленький текст 85%</small></h3>
+    <h4>itProger <small>Маленький текст 85%</small></h4>
+    <h5>itProger <small>Маленький текст 85%</small></h5>
+    <h6>itPorger <small>Маленький текст 85%</small></h6>
+    <br>
+    <p>Test, test <mark>Test example</mark></p>
+    <br>
+    <p class="text-left">Равнение по левому краю</p>
+    <p class="text-center">Равнение по центру</p>
+    <p class="text-right">Равнение по правому краю</p>
+    <p class="text-justify">Равнение по обоим краям, выравнивание по ширине</p>
+    <p class="text-nowrap">Текст без переносов</p>
+    <br>
+    <br>
+    <blockquote> <!-- указываем cite="http://..." -->
+        Некая очень умная цитата!
+        <footer>Стив Джобс!</footer>
+    </blockquote>
+    <br>
+    <blockquote class="blockquote-reverse"> <!-- указываем cite="http://..." -->
+        Некая очень умная цитата!
+        <footer>Стив Джобс!</footer>
+    </blockquote>
+
+    <p class="text-uppercase">верхний регистр</p>
+    <p class="text-lowercase">НИЖНИЙ РЕГИСТР</p>
+    <p class="text-capitalize">заглавные буквы - все слова с заглавных букв</p>
+    <br>
+    <br>
+
+    <code>for</code>, <code>while</code>, <code>do while</code>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <pre> <!-- учитывает все пробелы при отображениии,
+                 текст начинать от самого края страницы-->
+for (int i = 0; i < 10; i++)
+    print ("Hi!");
+                </pre>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+
+    <br><br>
+    <p class="text-muted">Что-то грустно. text-muted</p>
+    <p class="text-primary">Тут можно что-то важное text-primary</p>
+    <p class="text-success">Все удалось! text-sucess</p>
+    <p class="text-info">Здесь вы найдете полезную информацию. text-info</p>
+    <p class="text-warning">Лучше прочитать этот текст text-warning</p>
+    <p class="text-danger">Мы знаем где ты живешь! text-danger</p>
+
+    <br><br>
+    <p class="bg-primary">Тут можно что-то важное bg-primary</p>
+    <p class="bg-success">Все удалось! bg-success</p>
+    <p class="bg-info">Здесь вы найдете полезную информацию. bg-info</p>
+    <p class="bg-warning">Лучше прочитать этот текст bg-warning</p>
+    <p class="bg-danger">Мы знаем где ты живешь! bg-danger</p>
+</div>
+<div class="bg-danger container">
+    <h2 class="text-info">Всё удалось!</h2>
+
+    <p class="text-right">Простой текст</p>
+
+    <pre>if (i == 0)
+		start_game = true;</pre>
+
+    <blockquote class="blockquote-reverse">Если включить музыку, то код можно написать без ошибок.
+        <footer>Билл Гейтс</footer>
+    </blockquote>
+</div>
+
+<div class="table-responsive container">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Сайт</th>
+            <th>Домен</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td class="success">Программирование</td>
+            <td class="info"><a href="https://itproger.com">https://itproger.com</a></td>
+        </tr>
+        <tr>
+            <td class="warning">Информационное агенство</td>
+            <td><a href="http://plurrimi.com">http://plurrimi.com</a></td>
+        </tr>
+        <tr>
+            <td class="warning">Поисковая система</td>
+            <td><a href="https://google.com">https://google.com</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Номер телефона</th>
+            <th>Почта</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Василий</td>
+            <td>+78285762343</td>
+            <td>vasya@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Миша</td>
+            <td>+78652762343</td>
+            <td>misha@test.com</td>
+        </tr>
+        <tr>
+            <td>Петр</td>
+            <td>+782567862343</td>
+            <td>petya@mail.ru</td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Имя</th>
+        <th>Номер телефона</th>
+        <th>Почта</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Василий</td>
+        <td>+78285762343</td>
+        <td>vasya@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Миша</td>
+        <td>+78652762343</td>
+        <td>misha@test.com</td>
+    </tr>
+    <tr>
+        <td>Петр</td>
+        <td>+782567862343</td>
+        <td>petya@mail.ru</td>
+    </tr>
+    </tbody>
+</table>
+<div class="table-responsive"> <!-- если 769 пикселей и ниже экран - прокручивание работает -->
+    <table class="table table-bordered table-condensed table-hover">
+        <thead>
+            <tr class="active">
+                <th>Имя</th>
+                <th>Номер телефона</th>
+                <th>Почта</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="success">Василий</td>
+                <td>+78285762343</td>
+                <td>vasya@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Миша</td>
+                <td>+78652762343</td>
+                <td class="info">misha@test.com</td>
+            </tr>
+            <tr>
+                <td>Петр</td>
+                <td class="warning">+782567862343</td>
+                <td class="danger">petya@mail.ru</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="buttons">
+    <button class="btn btn-default">Стандартная</button>
+    <input type="submit" class="btn btn-primary" value="Основная">
+    <input type="button" class="btn btn-success" value="Подтвердить">
+    <a href="#" class="btn btn-info" role="button">Уведомление</a>
+    <button class="btn btn-warning">Внимание</button>
+    <button class="btn btn-danger">Отмены</button>
+    <button class="btn btn-link">Сслыка</button>
+    <br><br>
+    <button class="btn btn-default btn-lg">Кнопка</button>
+    <button class="btn btn-default btn-md">Кнопка</button>
+    <button class="btn btn-default btn-sm">Кнопка</button>
+    <button class="btn btn-default btn-xs">Кнопка</button>
+    <br><br>
+    <button class="btn btn-success btn-md btn-block">Кнопка</button>
+    <br><br>
+    <button class="btn btn-default btn-lg active">Кнопка</button>
+    <button class="btn btn-default btn-lg disabled">Кнопка</button>
+    <br><br>
+    <div class="btn-group">
+        <div class="btn-group btn-group-md" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 3
+            </label>
+        </div>
+        <div class="btn-group-vertical btn-group-md" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 3
+            </label>
+        </div>
+        <br><br>
+
+        <div class="btn-group-vertical btn-group-md" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 3
+            </label>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="btn-toolbar" role="toolbar"> <!-- будут пробелы между группами -->
+        <div class="btn-group btn-group-md" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 3
+            </label>
+        </div>
+        <div class="btn-group btn-group-md" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 3
+            </label>
+        </div>
+    </div>
+    <br><br>
+
+
+    <div class="btn-group btn-group-justified"> <!-- не будет пробелов
+    но размеры кнопок распределятся на всю ширину родит блока -->
+        <div class="btn-group btn-group-md" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox"> Параметр 3
+            </label>
+        </div>
+        <div class="btn-group btn-group-md" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 1
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 2
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio"> Параметр 3
+            </label>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="btn-group btn-group-xs">
+        <button class="btn btn-success">Подтвердить</button>
+        <button class="btn btn-primary">Основная</button>
+        <button href="#" class="btn btn-outline-info">Стандартная</button>
+        <button class="btn btn-danger btn-block">Отмена</button>
+    </div>
+</div>
+
+
+
+<br><br>
+<form role="form">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Введите email">
+    </div>
+</form>
+
+<br><br>
+<div class="container">
+    <form role="form">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Введите email">
+            <p class="help-block">Некая подсказка</p>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль</label>
+            <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+            <p class="help-block">Некая подсказка</p>
+        </div>
+        <div class="checkbox">
+            <label for="checkbox">
+                <input type="checkbox" id="checkbox">Чекбокс
+            </label>
+        </div>
+        <button type="button" class="btn btn-success">Регистрация</button>
+    </form>
+</div>
+
+<!-- Форма в одну линию -->
+<br><br>
+<div class="container">
+    <form role="form" class="form-inline">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Введите email">
+            <p class="help-block">Некая подсказка</p>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль</label>
+            <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+            <p class="help-block">Некая подсказка</p>
+        </div>
+        <div class="checkbox">
+            <label for="checkbox">
+                <input type="checkbox" id="checkbox">Чекбокс
+            </label>
+        </div>
+        <button type="button" class="btn btn-success">Регистрация</button>
+    </form>
+</div>
+
+<!-- Форма горизонтальная - можем разбивать ее при помощи системы сеток -->
+<br><br>
+<div class="container">
+    <form role="form" class="form-horizontal">
+        <div class="form-group">
+            <label for="email1" class="control-label col-md-2">Email</label>
+            <div class="col-md-10">
+                <input type="email" class="form-control" id="email1" placeholder="Введите email">
+            </div>
+<!--            <p class="help-block">Некая подсказка</p>-->
+        </div>
+        <div class="form-group">
+            <label for="password1" class="control-label col-md-2">Пароль</label>
+            <div class="col-md-10">
+                <input type="password" class="form-control" id="password1" placeholder="Введите пароль">
+            </div>
+<!--            <p class="help-block">Некая подсказка</p>-->
+        </div>
+        <div class="checkbox">
+            <label for="checkbox1">
+                <input type="checkbox" id="checkbox1">Чекбокс
+            </label>
+        </div>
+        <button type="button" class="btn btn-success">Регистрация</button>
+
+        <br><br>
+        <!-- Выбор -->
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+        <!-- Радиокнопки -->
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+                Первый элемент
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="radio2" value="option2" disabled="disabled">
+                Второй элемент
+            </label>
+        </div>
+        <!-- Радиокнопки в ряд -->
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+                Первый элемент
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optionsRadios" id="radio2" value="option2" disabled="disabled">
+                Второй элемент
+            </label>
+        </div>
+    </form>
+</div>
+
+<br><br>
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Ваша почта</label>
+            <div class="col-sm-10">
+                <!-- Текст как будто бы на месте поля -->
+                <p class="form-control-static">test@test.net</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pass1" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control input-lg" id="pass1" placeholder="Введите пароль">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+            </div>
+        </div>
+
+        <br><br>
+        <div class="form-group has-error">
+            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+            </div>
+        </div>
+        <div class="form-group has-warning">
+            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+            </div>
+        </div>
+        <div class="form-group has-success">
+            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10 has-success">
+                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Домашнее задание -->
+<br><br>
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Ваша почта</label>
+            <div class="col-sm-10">
+                <p class="form-control-static">test@test.net</p>
+            </div>
+        </div>
+        <div class="form-group has-success">
+            <label for="pass" class="col-sm-2 control-label">Пароль</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control input-xs" id="pass" placeholder="Введите пароль">
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>
