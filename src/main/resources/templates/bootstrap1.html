@@ -978,10 +978,76 @@ for (int i = 0; i < 10; i++)
     </div>
 </div>
 
-<br><br>
+<br><br><br>
 <!-- Создание вкладок -->
-<div class="container"
+<div class="container"> <!-- будет красивее выглядеть и не прилегать к углам странички -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li><a href="#home" role="tab" data-toggle="tab">Домой</a></li> <!-- вместо href можно data-target -->
+        <li><a href="#profile" role="tab" data-toggle="tab">Профиль</a></li>
+        <li class="active"><a href="#message" role="tab" data-toggle="tab">Сообщения</a></li>
+        <li><a href="#settings" role="tab" data-toggle="tab">Настройки</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane" role="tabpanel" id="home">Вкладка домой</div>
+        <div class="tab-pane" role="tabpanel" id="profile">Вкладка профайл</div>
+        <div class="tab-pane active" role="tabpanel" id="message">Вкладка с сообщениями</div>
+        <div class="tab-pane" role="tabpanel" id="settings">Вкладка с настройками</div>
+    </div>
+</div>
 
+<!-- Вкладки с кнопками, медленно появляются/исчезают-->
+<br><br>
+<div class="container"> <!-- будет красивее выглядеть и не прилегать к углам странички -->
+    <ul class="nav nav-pills" role="tablist">
+        <li><a href="#home1" role="tab" data-toggle="pill">Домой</a></li> <!-- вместо href можно data-target -->
+        <li><a href="#profile1" role="tab" data-toggle="pill">Профиль</a></li>
+        <li class="active1"><a href="#message" role="tab" data-toggle="pill">Сообщения</a></li>
+        <li><a href="#settings1" role="tab" data-toggle="pill">Настройки</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade" role="tabpanel" id="home1">Вкладка домой</div>
+        <div class="tab-pane fade" role="tabpanel" id="profile1">Вкладка профайл</div>
+        <div class="tab-pane active fade in" role="tabpanel" id="message1">Вкладка с сообщениями</div>
+        <div class="tab-pane fade" role="tabpanel" id="settings1">Вкладка с настройками</div>
+    </div>
+</div>
+<br><br>
+
+<br><br><br>
+<!-- Домашнее задание -->
+<div class="container m-3">
+    <div class="btn-group btn-group-xs">
+        <a href="#tab_1" data-toggle="tab_1" class="btn btn-success">Вкладка №1</a>
+        <a href="#tab_2" data-toggle="tab" class="btn btn-primary">Вкладка №2</a>
+        <a href="#tab_3" data-toggle="tab" class="btn btn-outline-info">Вкладка №3</a>
+        <a href="#tab_4" data-toggle="tab" class="btn btn-danger">Вкладка №4</a>
+        <a href="#tab_5" data-toggle="tab" class="btn btn-warning">Вкладка №5</a>
+    </div>
+
+    <!-- Класс mt-4 (margin-top) добавляет отступ сверху -->
+    <div class="tab-content mt-4">
+        <div role="tabpanel" class="tab-pane active" id="tab_1">
+            <button type="button" class="btn btn-success">Первая вкладка</button>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab_2">Вкладка под номером 2</div>
+        <div role="tabpanel" class="tab-pane" id="tab_3">Вкладка под номером 3</div>
+        <div role="tabpanel" class="tab-pane" id="tab_4">Вкладка под номером 4</div>
+        <div role="tabpanel" class="tab-pane" id="tab_5">Вкладка под номером 5</div>
+    </div>
+</div>
+<br><br><br>
+
+<!-- Создание всплывающих подсказок -->
+<div class="container">
+    <a href="#" data-toggle="tooltip" title="Что-то не сработало">Наведите курсор</a>
+    <br><br>
+    <button data-toggle="tooltip" title="Кнопка" data-placement="right" class="btn btn-success">Наведите курсор</button> <!-- Вместо right можно писать left, top, bottom -->
+    <br><br>
+    <a href="#" data-toggle="tooltip" title="Что-то не сработало" data-placement="left">Наведите курсор</a>
+    <br><br>
+    <a href="#" data-toggle="tooltip" title="Что-то не сработало" data-placement="bottom">Наведите курсор</a>
+    <br><br><br>
+</div>
 
 
 
@@ -1022,5 +1088,27 @@ for (int i = 0; i < 10; i++)
         alert("Блок полностью открыт");
     });  <!-- вызыв функц когда блок полн открыт  -->
 </script>
+<script>
+    $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) { // еще show, hide, hidden можно вместо shown
+        console.log(e.target); // вкладка, которая стала активной
+        console.log(e.relatedTarget); // предыдущая активная вкладка
+    }); // логирует в консоль вкладки, кот открыв/закрыв пользователь
+</script>
+<script>
+    $('#settings').tab('hide'); // прячем вкладку, можно show вместо hide указать
+</script>
+<!-- Подсказки будут всплывать и на ссылках, и на кнопках -->
+<script>
+    $(document).ready (function () {
+        $('[data-toggle="tooltip"]').tooltip ();
+    });
+</script>
+<!-- подсказки будут всплывать только для ссылок
+ на кнопке не будут -->
+<!--<script>-->
+<!--    $(document).ready (function () {-->
+<!--        $('a[data-toggle="tooltip"]').tooltip ();-->
+<!--    });-->
+<!--</script>-->
 </body>
 </html>
