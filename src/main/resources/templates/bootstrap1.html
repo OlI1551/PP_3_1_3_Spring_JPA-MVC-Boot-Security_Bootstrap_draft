@@ -11,13 +11,18 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style>
         #buttons {
             padding: 30px;
         }
     </style>
+    <style>
+        #panels {
+            padding: 30px;
+        }
+    </style>
+    <!-- Для подключения иконочного шрифта -->
+    <script src="https://kit.fontawesome.com/d0d41d9fcd.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container"> <!-- container имеет заданную ширину - например 500px и помещ посередине с отступами-->
@@ -441,8 +446,8 @@ for (int i = 0; i < 10; i++)
 <br><br>
 <form role="form">
     <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Введите email">
+        <label for="email5">Email</label>
+        <input type="email" class="form-control" id="email5" placeholder="Введите email">
     </div>
 </form>
 
@@ -450,18 +455,18 @@ for (int i = 0; i < 10; i++)
 <div class="container">
     <form role="form">
         <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Введите email">
+            <label for="email7">Email</label>
+            <input type="email" class="form-control" id="email7" placeholder="Введите email">
             <p class="help-block">Некая подсказка</p>
         </div>
         <div class="form-group">
-            <label for="password">Пароль</label>
-            <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+            <label for="password7">Пароль</label>
+            <input type="password" class="form-control" id="password7" placeholder="Введите пароль">
             <p class="help-block">Некая подсказка</p>
         </div>
         <div class="checkbox">
-            <label for="checkbox">
-                <input type="checkbox" id="checkbox">Чекбокс
+            <label for="checkbox7">
+                <input type="checkbox" id="checkbox7">Чекбокс
             </label>
         </div>
         <button type="button" class="btn btn-success">Регистрация</button>
@@ -539,13 +544,13 @@ for (int i = 0; i < 10; i++)
         <!-- Радиокнопки в ряд -->
         <div class="radio-inline">
             <label>
-                <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+                <input type="radio" name="optionsRadios" id="radio3" value="option1" checked>
                 Первый элемент
             </label>
         </div>
         <div class="radio-inline">
             <label>
-                <input type="radio" name="optionsRadios" id="radio2" value="option2" disabled="disabled">
+                <input type="radio" name="optionsRadios" id="radio4" value="option2" disabled="disabled">
                 Второй элемент
             </label>
         </div>
@@ -569,29 +574,29 @@ for (int i = 0; i < 10; i++)
             </div>
         </div>
         <div class="form-group">
-            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <label for="pass5" class="col-sm-2 control-label">Пароль</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+                <input type="password" class="form-control input-xs" id="pass5" placeholder="Введите пароль">
             </div>
         </div>
 
         <br><br>
         <div class="form-group has-error">
-            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <label for="pass3" class="col-sm-2 control-label">Пароль</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+                <input type="password" class="form-control input-xs" id="pass3" placeholder="Введите пароль">
             </div>
         </div>
         <div class="form-group has-warning">
-            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <label for="pass9" class="col-sm-2 control-label">Пароль</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+                <input type="password" class="form-control input-xs" id="pass9" placeholder="Введите пароль">
             </div>
         </div>
         <div class="form-group has-success">
-            <label for="pass2" class="col-sm-2 control-label">Пароль</label>
+            <label for="pass7" class="col-sm-2 control-label">Пароль</label>
             <div class="col-sm-10">
-                <input type="password" class="form-control input-xs" id="pass2" placeholder="Введите пароль">
+                <input type="password" class="form-control input-xs" id="pass7" placeholder="Введите пароль">
             </div>
         </div>
         <div class="form-group">
@@ -621,5 +626,401 @@ for (int i = 0; i < 10; i++)
         </div>
     </form>
 </div>
+
+<!-- Иконочный шрифт -->
+<br><br>
+<i class="glyphicon glyphicon-eye-close"></i>
+<br><br>
+<i class="glyphicon glyphicon-eye-close" style="color: red; font-size: 35px"></i>
+<br><br>
+<button class="btn-success">
+    <i class="glyphicon glyphicon-ok" style="color: blue"></i>
+    Все хорошо
+</button>
+<br><br>
+<button class="btn-success">
+    <span class="glyphicon glyphicon-ok" style="color: blue"></span>
+    Все хорошо
+</button>
+
+<!-- Значки и стикеры -->
+<br><br>
+<span class="badge">57</span>
+
+<!-- Картинки -->
+<br><br>
+<img src="http://happymodern.ru/wp-content/uploads/2015/10/Proekti_karkasnih_domov_41-650x431.jpg"
+     class="img-responsive"> <!-- подгоняется под ширину экрана -->
+<br><br>
+<img src="http://happymodern.ru/wp-content/uploads/2015/10/Proekti_karkasnih_domov_41-650x431.jpg"
+     class="img-circle"> <!-- овальная форма -->
+<br><br>
+<img src="http://happymodern.ru/wp-content/uploads/2015/10/Proekti_karkasnih_domov_41-650x431.jpg"
+     class="img-rounded"> <!-- скруглены углы -->
+<br><br>
+<img src="http://happymodern.ru/wp-content/uploads/2015/10/Proekti_karkasnih_domov_41-650x431.jpg"
+     class="img-thumbnail"> <!-- есть оформленные края -->
+
+<br><br>
+<!--
+Класс mr-2 означает небольшой отступ справа
+Расшифровывается как margin-right
+
+
+!!! Стиль кнопки не сработает - версия библиотеки бутстрап более ранняя
+-->
+
+<button class="btn btn-outline-danger">
+    <i class="fas fa-plus mr-2"></i>
+    Добавить
+</button>
+
+<br><br>
+<div id="panels">
+    <div class="panel panel-default">
+        <div class="panel-heading">Заголовок</div>
+        <div class="panel-body">Текст</div>
+        <div class="panel-footer">Подвал</div>
+    </div>
+
+    <br><br>
+    <div class="panel panel-success">
+        <div class="panel-heading">Заголовок</div>
+        <div class="panel-body">Текст</div>
+        <!-- уберем footer, так как он не меняет цвет -->
+    </div>
+
+    <br><br>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Заголовок</div>
+        <div class="panel-body">Текст</div>
+        <!-- уберем footer, так как он не меняет цвет -->
+    </div>
+
+    <br><br>
+    <div class="panel panel-info">
+        <div class="panel-heading">Заголовок</div>
+        <div class="panel-body">Текст</div>
+        <!-- уберем footer, так как он не меняет цвет -->
+    </div>
+
+    <br><br>
+    <div class="panel panel-warning">
+        <div class="panel-heading">Заголовок</div>
+        <div class="panel-body">Текст</div>
+        <!-- уберем footer, так как он не меняет цвет -->
+    </div>
+
+    <br><br>
+    <div class="panel panel-danger">
+        <div class="panel-heading">Заголовок</div>
+        <div class="panel-body">Текст</div>
+        <!-- уберем footer, так как он не меняет цвет -->
+    </div>
+
+    <!-- Группирование панелей - снизить кол-во отступов -->
+    <br><br>
+    <div class="panel-group">
+        <div class="panel panel-info">
+            <div class="panel-heading">Заголовок</div>
+            <div class="panel-body">Текст</div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">Заголовок</div>
+            <div class="panel-body">Текст</div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Заголовок</div>
+            <div class="panel-body">Текст</div>
+        </div>
+    </div>
+</div>
+
+<!-- Домашнее задание - не работает на бутстрапе 3.3.7-->
+<br><br>
+<div class="col-md-4">
+    <div class="card card-warning">
+        <div class="card-header">Отличная панель</div>
+        <div class="card-body">Здесь представлена некая полезная информация</div>
+        <div class="card-footer">Подвал не всегда уместен, но выглядит также хорошо</div>
+    </div>
+</div>
+<br><br>
+
+
+
+<!-- Выпадающие списки -->
+<br><br>
+<div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Список <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">jQuery</a></li>
+        <li><a href="#">Javascript</a></li>
+    </ul>
+</div>
+
+<br><br>
+<div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Список <span class="caret"></span></button>
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">jQuery</a></li>
+        <li><a href="#">Javascript</a></li>
+    </ul>
+</div>
+
+<br><br>
+<div class="dropup">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Список <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">jQuery</a></li>
+        <li><a href="#">Javascript</a></li>
+    </ul>
+</div>
+
+
+<br><br>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Навигация</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">itProger</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Действие</a></li>
+                        <li><a href="#">Другое действие</a></li>
+                        <li><a href="#">Что-то еще</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Отдельная ссылка</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Еще одна отдельная ссылка</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search"> <!-- будет слева -->
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Поиск">
+                </div>
+                <button type="submit" class="btn btn-default">Отправить</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right"> <!-- будет справа -->
+                <li><a href="#">Ссылка</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Действие</a></li>
+                        <li><a href="#">Другое действие</a></li>
+                        <li><a href="#">Что-то еще</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Отдельная ссылка</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="dropdown">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Список <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-header">Заголовок 1</li>
+        <li><a href="#">CSS</a></li>
+        <li class="disabled"><a href="#">HTML</a></li>
+        <li><a href="#">jQuery</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">Заголовок 2</li>
+        <li><a href="#">Javascript</a></li>
+    </ul>
+</div>
+
+
+
+<!-- Раскрывающиеся блоки -->
+<br><br>
+<button class="btn btn-link" data-toggle="collapse" data-target="#hide">JS Collapse</button>
+<div class="collapse" id="hide">
+    Какой-либо скрытый текст
+</div>
+
+<br><br>
+<span data-toggle="collapse" data-target="#hide1">JS Collapse1</span>
+<div class="collapse in" id="hide1">
+    Какой-либо скрытый текст1
+</div>
+
+<br><br>
+<a data-toggle="collapse" href="#hide2">JS Collapse2</a>
+<div class="collapse" id="hide2"> <!-- если collapse in - текст будет открыт при загрузке -->
+    Какой-либо скрытый текст2
+</div>
+<br><br>
+
+<!-- Автоматическое сворачивание элементов, которые находятся в какой-либо группе -->
+<div class="panel-group" id="collapse-group">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Первый</a>
+        </div>
+        <div id="el1" class="collapse in">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+    </div>
+
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+            <a data-toggle="collapse" data-parent="#collapse-group" href="#el2">Второй</a>
+        </div>
+        <div id="el2" class="collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+    </div>
+</div>
+
+<!-- Домашнее задание -->
+<div>
+    <button data-toggle="collapse" class="btn btn-warning" data-target="#block">JS Collapse</button>
+    <br><br>
+    <div class="collapse in" id="block">
+        <div class="jumbotron">
+            Какой-либо скрытый текст!
+        </div>
+    </div>
+</div>
+<br><br>
+
+<!-- Модальные окна -->
+<button class="btn btn-info" data-toggle="modal" data-target="#myModal">Всплывающее окно</button>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog"> <!-- чтоб по центру всегда появлялся -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title">Заголовок окна</h4>
+            </div>
+            <div class="modal-body">Некий текст уведомления</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<!-- Изменяем размер модального окна -->
+
+<button class="btn btn-info" data-toggle="modal" data-target="#myModal1">Всплывающее окно</button>
+<div id="myModal1" class="modal fade">
+    <div class="modal-dialog modal-sm"> <!-- уменьшили -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title">Заголовок окна</h4>
+            </div>
+            <div class="modal-body">Некий текст уведомления</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<button class="btn btn-info" data-toggle="modal" data-target="#myModal2">Всплывающее окно</button>
+<div id="myModal2" class="modal fade">
+    <div class="modal-dialog modal-lg"> <!-- увеличили -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title">Заголовок окна</h4>
+            </div>
+            <div class="modal-body">Некий текст уведомления</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<!-- закрываем клавишей Escape -->
+<button class="btn btn-info" data-toggle="modal" data-target="#myModal3">Всплывающее окно</button>
+<div id="myModal3" class="modal fade" tabindex="-1"> <!-- закр клав Escape -->
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">x</button>
+                <h4 class="modal-title">Заголовок окна</h4>
+            </div>
+            <div class="modal-body">Некий текст уведомления</div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<!-- Создание вкладок -->
+<div class="container"
+
+
+
+
+
+<!-- помещаем перед закрытием body, чтобы не нарушалась загрузка сайта -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Чтобы при обновлении странички сразу появл мод окно -->
+<!--<script>-->
+<!--    $('#myModal').modal();-->
+<!--    $('#myModal').modal("show"); &lt;!&ndash; по умолч - будет показ мод окно  &ndash;&gt;-->
+<!--    $('#myModal').modal("hide"); &lt;!&ndash; будет показ мод окно  &ndash;&gt;-->
+<!--    $('#myModal').modal("toggle"); &lt;!&ndash; будет мен состояние на противоположн  &ndash;&gt;-->
+<!--</script>-->
+<script>
+    $('#myModal').on('hidden.bs.modal', function(event) {
+        // функция
+        alert("Блок полностью закрыт - выполнено");
+    });  <!-- вызыв функц при вып условия в действ с окном - если закрыли окно  -->
+</script>
+<script>
+    $('#myModal').on('hide.bs.modal', function(event) {
+        // функция
+        alert("Начинаем закрывать блок");
+    });  <!-- вызыв функц при только-если только начальное закрытие  -->
+</script>
+<script>
+    $('#myModal').on('show.bs.modal', function(event) {
+        // функция
+        alert("Начинаем откр блок");
+    });  <!-- вызыв функц только стартовали блок откр  -->
+</script>
+<script>
+    $('#myModal').on('shown.bs.modal', function(event) {
+        // функция
+        alert("Блок полностью открыт");
+    });  <!-- вызыв функц когда блок полн открыт  -->
+</script>
 </body>
 </html>
