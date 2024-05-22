@@ -39,6 +39,7 @@ public class MainController {
         return "_page";
     }
 
+
     @PostMapping("/create")
     public String createUser(@ModelAttribute("newUser") User newUser,
                              @RequestParam("role") String role) {

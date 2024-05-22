@@ -52,15 +52,15 @@ public class DataLoader implements CommandLineRunner {
         userDao.updateUser(user);
         User ann = userDao.findByEmail("Ann@mail.ru");
         ann.setRoles(rolesUser);
-        ann.setPassword(passwordEncoder.encode(user.getPassword()));
+        ann.setPassword(passwordEncoder.encode(ann.getPassword()));
         userDao.updateUser(ann);
         User nick = userDao.findByEmail("Nick@mail.ru");
         nick.setRoles(rolesUser);
-        nick.setPassword(passwordEncoder.encode(user.getPassword()));
+        nick.setPassword(passwordEncoder.encode(nick.getPassword()));
         userDao.updateUser(nick);
         User bob = userDao.findByEmail("Bob@mail.ru");
         bob.setRoles(rolesUser);
-        bob.setPassword(passwordEncoder.encode(user.getPassword()));
+        bob.setPassword(passwordEncoder.encode(bob.getPassword()));
         userDao.updateUser(bob);
     }
 }
