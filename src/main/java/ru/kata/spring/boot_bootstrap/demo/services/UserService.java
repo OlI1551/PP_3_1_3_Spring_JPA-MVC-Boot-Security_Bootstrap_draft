@@ -70,7 +70,11 @@ public class UserService implements UserDetailsService {
         existingUser.setLastName(user.getLastName());
         existingUser.setAge(user.getAge());
         existingUser.setEmail(user.getEmail());
-        existingUser.setPassword(user.getPassword());
+        if (!user.getPassword().equals(existingUser.getPassword())) {
+            existingUser.setPassword(passwordEncoder.encode(user.getPassword()));
+        } else {
+            existingUser.setPassword(user.getPassword());
+        }
         Set<Role> roles = new HashSet<>();
         if (role.equals("ROLE_ADMIN")) {
             roles.add(new Role(2L, "ROLE_ADMIN"));
