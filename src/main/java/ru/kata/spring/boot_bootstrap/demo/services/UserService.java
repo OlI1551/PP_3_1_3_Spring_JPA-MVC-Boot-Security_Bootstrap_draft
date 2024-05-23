@@ -52,9 +52,9 @@ public class UserService implements UserDetailsService {
         Set<Role> roles = new HashSet<>();
         if (role.equals("ROLE_ADMIN")) {
             roles.add(new Role(2L, "ROLE_ADMIN"));
-        } else {
-            roles.add(new Role(1L, "ROLE_USER"));
         }
+        roles.add(new Role(1L, "ROLE_USER"));
+
         user.setRoles(roles);
         userDao.addUser(user);
     }
@@ -71,13 +71,12 @@ public class UserService implements UserDetailsService {
         existingUser.setAge(user.getAge());
         existingUser.setEmail(user.getEmail());
         existingUser.setPassword(user.getPassword());
-        existingUser.setRoles(user.getRoles());
         Set<Role> roles = new HashSet<>();
         if (role.equals("ROLE_ADMIN")) {
             roles.add(new Role(2L, "ROLE_ADMIN"));
-        } else {
-            roles.add(new Role(1L, "ROLE_USER"));
         }
+        roles.add(new Role(1L, "ROLE_USER"));
+
         existingUser.setRoles(roles);
         userDao.updateUser(existingUser);
     }
