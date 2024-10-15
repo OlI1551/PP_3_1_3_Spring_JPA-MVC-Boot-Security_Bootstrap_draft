@@ -54,8 +54,8 @@ public class UserServiceImpl implements UserService {
         } else {
             roles.add(new Role(1L, "ROLE_USER"));
         }
-
         user.setRoles(roles);
+
         userDao.addUser(user);
     }
 
