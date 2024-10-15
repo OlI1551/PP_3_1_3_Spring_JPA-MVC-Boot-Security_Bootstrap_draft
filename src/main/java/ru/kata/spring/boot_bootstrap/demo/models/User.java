@@ -1,13 +1,22 @@
 package ru.kata.spring.boot_bootstrap.demo.models;
 
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import javax.persistence.*;
-import java.util.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.ManyToMany;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.FetchType;
+import javax.persistence.JoinTable;
+import javax.persistence.JoinColumn;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
+
 
 @Entity
 @Table(name = "users")
@@ -32,12 +41,10 @@ public class User implements UserDetails {
    private String password;
 
    @ManyToMany(fetch = FetchType.LAZY)
-   @LazyCollection(LazyCollectionOption.EXTRA)
-   @Fetch(FetchMode.JOIN)
    @JoinTable(
            name = "users_roles",
-           joinColumns = @JoinColumn(name = "users_id"),
-           inverseJoinColumns = @JoinColumn(name = "roles_id")
+           joinColumns = @JoinColumn(name = "user_id"),
+           inverseJoinColumns = @JoinColumn(name = "role_id")
    )
    private Set<Role> roles = new HashSet<>();
 

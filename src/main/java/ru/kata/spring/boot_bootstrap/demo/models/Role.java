@@ -1,7 +1,14 @@
 package ru.kata.spring.boot_bootstrap.demo.models;
 
 import org.springframework.security.core.GrantedAuthority;
-import javax.persistence.*;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Column;
+import javax.persistence.Transient;
+import javax.persistence.ManyToMany;
 import java.util.Objects;
 import java.util.Set;
 

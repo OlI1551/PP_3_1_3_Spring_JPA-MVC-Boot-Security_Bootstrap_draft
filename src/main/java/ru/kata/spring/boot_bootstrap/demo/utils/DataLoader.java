@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import ru.kata.spring.boot_bootstrap.demo.dao.RoleDao;
 import ru.kata.spring.boot_bootstrap.demo.dao.UserDao;
 import ru.kata.spring.boot_bootstrap.demo.models.Role;
@@ -11,13 +12,11 @@ import ru.kata.spring.boot_bootstrap.demo.models.User;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @Component
 public class DataLoader implements CommandLineRunner {
-
     private final RoleDao roleDao;
-
     private final UserDao userDao;
-
     private final PasswordEncoder passwordEncoder;
 
 
@@ -29,6 +28,7 @@ public class DataLoader implements CommandLineRunner {
     }
 
     @Override
+    @Transactional
     public void run(String... args) throws Exception {
         roleDao.addRole(new Role(1L, "ROLE_USER"));
         roleDao.addRole(new Role(2L, "ROLE_ADMIN"));
