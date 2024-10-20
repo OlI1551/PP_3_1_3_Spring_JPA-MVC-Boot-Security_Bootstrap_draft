@@ -4,12 +4,13 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import javax.persistence.Column;
 import javax.persistence.ManyToMany;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.FetchType;
+import javax.persistence.CascadeType;
 import javax.persistence.JoinTable;
 import javax.persistence.JoinColumn;
 import java.util.Collection;
@@ -40,7 +41,7 @@ public class User implements UserDetails {
    @Column(name = "password")
    private String password;
 
-   @ManyToMany(fetch = FetchType.LAZY)
+   @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE})
    @JoinTable(
            name = "users_roles",
            joinColumns = @JoinColumn(name = "user_id"),
